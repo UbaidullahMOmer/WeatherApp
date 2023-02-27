@@ -1,2 +1,3 @@
 # WeatherApp
-Create a Weather App using React js or API
+# I create a Weather App using React js or API
+# In this app I learn some new React js concepts
