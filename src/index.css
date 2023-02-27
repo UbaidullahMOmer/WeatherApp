@@ -18,11 +18,14 @@ p {
 }
 
 h1{
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .location p{
   font-size: 6rem;
+}
+span{
+  font-size: 2.5rem;
 }
 
 .app{
@@ -45,15 +48,17 @@ h1{
 }
 
 .app .search{
+  
   text-align: center;
   padding: 1rem;
   
 }
 .app input{
-  padding: .7rem 1.5rem;
-  font-size: 1.2;
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-top: 30px;
+  padding: 1.5rem 3rem;
+  font-size: 100;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
   background: rgba(255,255,255,0.1);
   color: #fff;
 }
@@ -67,7 +72,7 @@ h1{
   margin: auto;
   padding: 0 1rem;
   position: relative;
-  top: 10%;
+  top: 4.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -92,7 +97,7 @@ h1{
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 12px;
-  background-color: rgba(255,255,255, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bold {
@@ -113,5 +118,8 @@ h1{
   }
   p {
     font-size: 1.1rem;
+  }
+  span{
+    font-size: 1.8rem;
   }
 }
