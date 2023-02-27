@@ -1,7 +1,3 @@
-# WeatherApp
-# I create a Weather App using React js or API
-# In this app I learn some new React js concepts
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
