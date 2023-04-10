@@ -1,23 +1,29 @@
-import React, {useState} from "react";
-import axios from "axios";
+import React, { useState } from "react";
+// import axios from "axios";
 
 function App() {
-  const [data,setData] = useState({})
-  const [location, setLocation] = useState('Lahore')
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=19f811528d1aab4095e197501690885c&units=metric`
-  const searchLocation = (event) =>{
-    if (event.key === 'Enter') {
-      axios.get(url).then((response) => {
-        setData(response.data)
-        console.table(response.data)
-      })
-      setLocation('')
-    }
-  }
-
+  const countries = [
+    { name: "Pakistan", value: "pk", cities: ["Karachi", "Lahore"] },
+    { name: "India", value: "in", cities: ["Mumbai", "Dehli"] },
+    { name: "Bangladash", value: "bg", cities: ["Dhaka", "Chittagong"] },
+  ];
+  // const [country, setCountry] = useState()
   return (
     <div className="app">
       <h1>Ubaidullah</h1>
+      <select style={{border: "6px solid #0091ff", fontSize:"50px", margin: "10px", borderRadius:"5px", color: "#0091ff"}} name="cars">
+        {countries.map((item) => (
+          <option value="{item.value}">{item.name}</option>
+
+        ))}
+      </select>
+      <select style={{border: "6px solid #0091ff", fontSize:"50px", margin: "10px", borderRadius:"5px", color: "#0091ff"}} name="cars">
+        {
+          countries[0].cities.map((item) => (
+            <option>{item}</option>
+          ))}
+      </select>
+      
     </div>
   );
 }
