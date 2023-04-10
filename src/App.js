@@ -17,49 +17,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="search">
-        <input 
-        value={location}
-        onChange={event => setLocation(event.target.value)}
-        onKeyPress={searchLocation}
-        placeholder='Enter Location'  
-        type="text"/>
-      </div>
-      <div className="container">
-        <div className="top">
-          <div className="location">
-            <p>{data.name}  {data.sys ? <span>{data.sys.country}</span>  : null }</p>
-          </div>
-          <div className="temp">
-            {data.main ? <h1>{data.main.temp}°C</h1> : null}
-            {/* <h1>60</h1> */}
-          </div>
-          <div className="description">
-            {data.weather ? <p>{data.weather[0].main}</p>  : null }
-            {/* {data.weather ? <div>{data.weather[0].icon}</div>  : null } */}
-          </div>
-        </div>
-        
-        {data.name !== undefined &&
-                <div className="bottom">
-                <div className="feels">
-                  {data.main ? <p className="bold">{data.main.feels_like}°C</p> : null}
-                  <p>Feels Likes</p>
-                </div>
-                <div className="humidity">
-                {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
-                  <p>Humidity</p>
-                </div>
-                <div className="wind">
-                {data.wind ? <p className="bold">{data.wind.speed}MPH</p> : null}
-                  <p>Wind Speed</p>
-                </div>
-              </div>
-      
-        }
-
-
-      </div>
+      <h1>Ubaidullah</h1>
     </div>
   );
 }
